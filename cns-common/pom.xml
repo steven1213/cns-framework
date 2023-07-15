@@ -13,12 +13,18 @@
     <packaging>pom</packaging>
     <modules>
         <module>cns-common-swagger</module>
-        <module>cns-common-core</module>
+        <module>cns-common-job</module>
+        <module>cns-common-tool</module>
+        <module>cns-common-cache</module>
+        <module>cns-common-oss</module>
+        <module>cns-common-mq</module>
+        <module>cns-common-web</module>
     </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+
 
 </project>

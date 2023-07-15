@@ -6,6 +6,7 @@
     <modules>
         <module>cns-common</module>
         <module>cns-example</module>
+        <module>cns-starter</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -22,12 +23,13 @@
         <java.version>17</java.version>
         <spring-boot-admin.version>2.7.4</spring-boot-admin.version>
         <spring-cloud.version>2021.0.7</spring-cloud.version>
+        <mapstruct.version>1.5.2.Final</mapstruct.version>
+        <gson.version>2.9.1</gson.version>
+        <hibernate-validator.version>8.0.0.Final</hibernate-validator.version>
+        <minio.version>8.3.3</minio.version>
+        <hutool-all.version>5.8.6</hutool-all.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-activemq</artifactId>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
@@ -47,6 +49,20 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-neo4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
