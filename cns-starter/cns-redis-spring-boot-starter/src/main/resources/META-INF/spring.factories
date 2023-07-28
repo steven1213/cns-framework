@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.steven.cns.redis.spring.boot.starter.EnableAutoRedisConfiguration

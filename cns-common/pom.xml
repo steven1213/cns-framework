@@ -24,7 +24,53 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <cns-common-web.version>0.0.1-SNAPSHOT</cns-common-web.version>
+        <cns-common-oss.version>0.0.1-SNAPSHOT</cns-common-oss.version>
+        <cns-common-mq.version>0.0.1-SNAPSHOT</cns-common-mq.version>
+        <cns-common-job.version>0.0.1-SNAPSHOT</cns-common-job.version>
+        <cns-common-cache.version>0.0.1-SNAPSHOT</cns-common-cache.version>
+        <cns-common-tool.version>0.0.1-SNAPSHOT</cns-common-tool.version>
+        <cns-common-swagger.version>0.0.1-SNAPSHOT</cns-common-swagger.version>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.steven</groupId>
+                <artifactId>cns-common-tool</artifactId>
+                <version>${cns-common-tool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.steven</groupId>
+                <artifactId>cns-common-cache</artifactId>
+                <version>${cns-common-cache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.steven</groupId>
+                <artifactId>cns-common-job</artifactId>
+                <version>${cns-common-job.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.steven</groupId>
+                <artifactId>cns-common-mq</artifactId>
+                <version>${cns-common-mq.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.steven</groupId>
+                <artifactId>cns-common-oss</artifactId>
+                <version>${cns-common-oss.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.steven</groupId>
+                <artifactId>cns-common-web</artifactId>
+                <version>${cns-common-web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.steven</groupId>
+                <artifactId>cns-common-swagger</artifactId>
+                <version>${cns-common-swagger.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

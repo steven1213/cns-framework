@@ -12,8 +12,27 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>cns-minio-spring-boot-starter</module>
+        <module>cns-redis-spring-boot-starter</module>
     </modules>
+    <properties>
+        <cns-redis-spring-boot-starter.version>0.0.1-SNAPSHOT</cns-redis-spring-boot-starter.version>
+        <cns-minio-spring-boot-starter.version>0.0.1-SNAPSHOT</cns-minio-spring-boot-starter.version>
+    </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.steven</groupId>
+                <artifactId>cns-redis-spring-boot-starter</artifactId>
+                <version>${cns-redis-spring-boot-starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.steven</groupId>
+                <artifactId>cns-minio-spring-boot-starter</artifactId>
+                <version>${cns-minio-spring-boot-starter.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 
